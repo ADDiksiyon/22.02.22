@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+            <div class="First">
+                <h1>22.02.22</h1>
+               
+            </div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="Second">
+                <h1>Creshelle Narciso Montino</h1>  
+            </div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="Third">
+                <h1>気に入った</h1>
+                <p>dahil sa mga 'to</p>
+                <br>
+                <h4 class="slide-in-right">Sobrang Talented mo</h4>
+                <br>
+                <h4 class="slide-in-right">Masipag</h4>
+                <p class="slide-in-right">(alam kong kontra ka pero may defense ako)</p>
+                <br>
+                <h4 class="slide-in-right">at 'di ko talaga kung bakit sadyang nagustuhan na lang kita out of knowhere >///<</h3>
+             </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="Fourth">
+                <h1>So What ever happens</h1>
+                <br>
+                <br>
+                <h5>I still adore you /ᐠ_ ꞈ _ᐟ\ɴʏᴀ~</h5>
+            </div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 7000); // Change image every 2 seconds
+        }
+        </script>
+        
+        
+
+</body>
+</html>

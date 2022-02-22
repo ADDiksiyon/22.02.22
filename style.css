@@ -73,8 +73,12 @@
 .Third p{
     font-size: 15px;
 }
-.slide-in-right{animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) forwards}
+.slide-in-right{animation:slide-in-right .3s cubic-bezier(.25,.46,.45,.94) forwards}
 @keyframes slide-in-right{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+.slide-in-right1{animation:slide-in-right .4s cubic-bezier(.25,.46,.45,.94) forwards}
+@keyframes slide-in-right1{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+.slide-in-right2{animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) forwards}
+@keyframes slide-in-right2{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
 
 * {box-sizing: border-box;}
 .mySlides {display: none;}
